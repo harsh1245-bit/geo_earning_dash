@@ -12,7 +12,7 @@ const App = () => {
   const [filters, setFilters] = useState({ align: [], geo: [], employee: [] });
 
   useEffect(() => {
-    fetch('./data.json')
+    fetch('/data.json')
       .then(res => res.json())
       .then(json => {
         setData(json);
